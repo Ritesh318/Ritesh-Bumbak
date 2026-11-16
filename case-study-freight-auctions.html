@@ -1,0 +1,334 @@
+<!doctype html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog&&window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}p||((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",p.onerror=function(){p=null},(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],Object.defineProperty(u,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e}}),Object.defineProperty(u.people,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(){return u.toString(1)+" (stub)"}}),o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagResult isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getFeatureFlag debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_uyQYcnatYtY3KSNe5HN9vagt3n98FnzvtJ8dpssD5VMq', { api_host: 'https://us.i.posthog.com', defaults: '2026-05-30' });
+</script>
+<title>Create Freight Auctions 40% Faster on Taabi Procurement | Ritesh Bumbak</title>
+<meta name="description" content="Case study: redesigning the auction creation flow on Taabi Procurement so procurement managers can configure and launch freight auctions faster, with fewer errors and less dependence on support.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="article"><meta property="og:title" content="Create Freight Auctions 40% Faster on Taabi Procurement"><meta property="og:description" content="Redesigning a complex freight auction creation workflow for clarity and speed."><meta property="og:image" content="https://ritesh-bumbak.vercel.app/assets/freight-case/fa-01.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231f2328'/%3E%3Crect x='6' y='6' width='52' height='52' fill='none' stroke='%23ffffff' stroke-width='2'/%3E%3Ctext x='32' y='41' font-family='Arial,sans-serif' font-size='22' fill='%23ffffff' text-anchor='middle'%3ERB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/case-study.css">
+</head><body class="p1">
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="ph-arrow-right" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol><symbol id="ph-arrow-down" viewBox="0 0 256 256"><path d="M205.66,149.66l-72,72a8,8,0,0,1-11.32,0l-72-72a8,8,0,0,1,11.32-11.32L120,196.69V40a8,8,0,0,1,16,0V196.69l58.34-58.35a8,8,0,0,1,11.32,11.32Z"/></symbol><symbol id="ph-arrow-up" viewBox="0 0 256 256"><path d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z"/></symbol><symbol id="ph-arrow-up-right" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></symbol><symbol id="ph-plus" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></symbol><symbol id="ph-x" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol><symbol id="ph-copy" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"/></symbol><symbol id="ph-check" viewBox="0 0 256 256"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></symbol><symbol id="ph-list" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></symbol><symbol id="ph-rocket-launch" viewBox="0 0 256 256"><path d="M223.85,47.12a16,16,0,0,0-15-15c-12.58-.75-44.73.4-71.41,27.07L132.69,64H74.36A15.91,15.91,0,0,0,63,68.68L28.7,103a16,16,0,0,0,9.07,27.16l38.47,5.37,44.21,44.21,5.37,38.49a15.94,15.94,0,0,0,10.78,12.92,16.11,16.11,0,0,0,5.1.83A15.91,15.91,0,0,0,153,227.3L187.32,193A15.91,15.91,0,0,0,192,181.64V123.31l4.77-4.77C223.45,91.86,224.6,59.71,223.85,47.12ZM74.36,80h42.33L77.16,119.52,40,114.34Zm74.41-9.45a76.65,76.65,0,0,1,59.11-22.47,76.46,76.46,0,0,1-22.42,59.16L128,164.68,91.32,128ZM176,181.64,141.67,216l-5.19-37.17L176,139.31Zm-74.16,9.5C97.34,201,82.29,224,40,224a8,8,0,0,1-8-8c0-42.29,23-57.34,32.86-61.85a8,8,0,0,1,6.64,14.56c-6.43,2.93-20.62,12.36-23.12,38.91,26.55-2.5,36-16.69,38.91-23.12a8,8,0,1,1,14.56,6.64Z"/></symbol></defs></svg>
+
+<header class="nav-wrap band" id="navWrap">
+  <nav class="navbar col" id="navbar" aria-label="Primary">
+    <a class="brand" href="index.html#home"><span class="brand-name">Ritesh Bumbak</span></a>
+    <div class="nav-links">
+      <a href="index.html#work" class="is-active">Work</a><a href="index.html#about">About</a><a href="index.html#experience">Experience</a><a href="index.html#contact">Contact</a>
+    </div>
+    <div class="nav-right"><button class="nav-resume" id="navDownload" type="button">Resume <span class="arr dl-ic"><svg class="ph" aria-hidden="true"><use href="#ph-arrow-down"/></svg></span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span class="ic-open"><svg class="ph" aria-hidden="true"><use href="#ph-list"/></svg></span><span class="ic-close"><svg class="ph" aria-hidden="true"><use href="#ph-x"/></svg></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu"><a href="index.html#work">Work</a><a href="index.html#about">About</a><a href="index.html#experience">Experience</a><a href="index.html#contact">Contact</a><button class="btn" id="mobileDownload" type="button">Resume <svg class="ph" aria-hidden="true"><use href="#ph-arrow-down"/></svg></button></div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- ===== Title ===== -->
+<article>
+<section class="band cs-hero" aria-labelledby="cs-title">
+  <div class="col">
+    <div class="span"><div class="cell-title">
+      <a class="cs-back" href="index.html#work"><svg class="ph" aria-hidden="true"><use href="#ph-arrow-right"/></svg>Selected Work</a>
+      <ul class="cs-tags" aria-label="Topics"><li class="cs-tag">Product Design</li><li class="cs-tag">SaaS</li><li class="cs-tag">Logistics</li><li class="cs-tag">Auction</li><li class="cs-tag">UX Design</li></ul>
+      <h1 class="cs-title" id="cs-title">Create Freight Auctions 40% Faster on Taabi Procurement</h1>
+      <p class="cs-byline"><span>Ritesh Bumbak</span><span>Product Designer</span><span>7 min read</span></p>
+    </div></div>
+    <div class="span"><figure class="cs-fig cs-fig--bare"><img src="assets/freight-case/fa-01.webp" width="3000" height="1688" alt="Taabi Procurement auction creation — product overview" decoding="async" fetchpriority="high"></figure></div>
+    <div class="span"><aside class="role" aria-label="Project summary">
+      <div class="role__cell"><span class="role__label">Role</span><div class="role__value">UX Designer</div></div>
+      <div class="role__cell"><span class="role__label">Company</span><div class="role__value">Taabi Mobility &middot; CEAT Limited</div></div>
+      <div class="role__cell"><span class="role__label">Product</span><div class="role__value">Taabi Procurement</div></div>
+      <div class="role__cell"><span class="role__label">Focus</span><div class="role__value">Auction creation flow</div></div>
+    </aside></div>
+  </div>
+</section>
+
+<!-- ===== Product Overview ===== -->
+<section class="band" aria-labelledby="h-overview">
+  <div class="band"><div class="col heading heading--sm"><h2 class="section-title reveal" id="h-overview">Product Overview</h2></div></div>
+  <div class="col">
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-text"><p class="lead">The product enables procurement managers to source multiple transporters for yearly tender contracts through competitive auctions.</p></div></div>
+      <div class="cell cell--b"><div class="cs-text"><p>Procurement managers can configure lanes, select bidders, define auction rules, and set up the auction before launching it.</p></div></div>
+    </div>
+    <div class="endcap"></div>
+  </div>
+</section>
+
+<!-- ===== Problem Statement ===== -->
+<section class="band" aria-labelledby="h-problem">
+  <div class="band"><div class="col heading heading--sm"><h2 class="section-title reveal" id="h-problem">Problem Statement</h2></div></div>
+  <div class="col">
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-text">
+        <p class="lead">Freight procurement is a highly operational process where procurement managers configure and run auctions to secure competitive transportation rates.</p>
+        <p>The auction platform had already been deployed to customers, with training and handoff completed 2–3 months earlier. However, post-launch usage revealed a significant usability problem: users were still struggling to independently create auctions.</p>
+      </div></div>
+      <div class="cell cell--b"><div class="cs-text">
+        <p>Despite training, we saw:</p>
+        <ul><li>High volume of support calls and tickets</li><li>Significant form abandonment</li><li>High error and correction rates</li><li>Difficulty understanding what each step required</li></ul>
+        <p>The issue was no longer whether users knew the procurement process.</p>
+        <p>It was whether the product itself was clear enough to help them complete the process independently.</p>
+      </div></div>
+    </div>
+    <div class="endcap"></div>
+  </div>
+</section>
+
+<!-- ===== The challenge ===== -->
+<section class="band" aria-labelledby="h-challenge">
+  <div class="band"><div class="col heading heading--sm"><h2 class="section-title reveal" id="h-challenge">The challenge</h2></div></div>
+  <div class="col">
+    <div class="span reveal"><div class="cs-text"><blockquote class="cs-quote">How might we simplify a complex auction creation workflow so procurement managers can complete it confidently, with fewer errors and less dependence on support?</blockquote></div></div>
+    <div class="endcap"></div>
+  </div>
+</section>
+
+<!-- ===== Outcome ===== -->
+<section class="band" aria-labelledby="h-outcome">
+  <div class="band"><div class="col heading heading--sm"><h2 class="section-title reveal" id="h-outcome">Outcome 🚩</h2></div></div>
+  <div class="col">
+    <div class="span reveal"><div class="cs-text"><p class="lead">The project focused on redesigning the auction creation flow, optimizing it for <strong>clarity and speed</strong> so procurement managers could configure and launch auctions with less effort and fewer errors.</p></div></div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-02.webp" width="3000" height="562" alt="Outcome — redesigned auction creation flow" loading="lazy" decoding="async"></figure></div>
+    <div class="endcap"></div>
+  </div>
+</section>
+
+<!-- ===== Problems in the current form ===== -->
+<section class="band" aria-labelledby="h-problems">
+  <div class="band"><div class="col heading heading--sm"><h2 class="section-title reveal" id="h-problems">Alright, Let’s Figure Out the Problems in the Current Form</h2></div></div>
+  <div class="col">
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-03.webp" width="3000" height="949" alt="Problems in the current auction creation form" loading="lazy" decoding="async"></figure></div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-04.webp" width="3000" height="949" alt="Problems in the current auction creation form, continued" loading="lazy" decoding="async"></figure></div>
+
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-sub"><h3>User Research &amp; Form UI Evaluation</h3></div></div>
+      <div class="cell cell--b"><div class="cs-text">
+        <ul>
+          <li>We conducted task observation session, gave our user dummy data to create an auction</li>
+          <li>We documented all the critical blockers they customers were raising over support calls</li>
+          <li>We did full form workflow evaluation of, how many text fields need to be filled by the user, how many can be fetched, autofilled or be prefilled,</li>
+          <li>How does effort and clarity of action per step looks like</li>
+        </ul>
+        <p>We mapped out all the user understanding gaps in a single excel sheet from support calls and task observation sessions</p>
+      </div></div>
+    </div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-05.webp" width="2664" height="890" alt="Spreadsheet mapping user understanding gaps from support calls and task observation sessions" loading="lazy" decoding="async"></figure></div>
+
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-sub"><h3>✨ Key Insights Identified from the Research</h3></div></div>
+      <div class="cell cell--b"></div>
+    </div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-06.webp" width="2973" height="846" alt="Key research insight 1" loading="lazy" decoding="async"></figure></div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-07.webp" width="2973" height="846" alt="Key research insight 2" loading="lazy" decoding="async"></figure></div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-08.webp" width="2973" height="846" alt="Key research insight 3" loading="lazy" decoding="async"></figure></div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-09.webp" width="2973" height="846" alt="Key research insight 4" loading="lazy" decoding="async"></figure></div>
+    <div class="endcap"></div>
+  </div>
+</section>
+
+<!-- ===== Archetypes ===== -->
+<section class="band" aria-labelledby="h-archetypes">
+  <div class="band"><div class="col heading heading--sm"><h2 class="section-title reveal" id="h-archetypes">Designing for Different Auction-Creation Archetypes</h2></div></div>
+  <div class="col">
+    <div class="span reveal"><div class="cs-text"><p class="lead">Each archetype has a different job to accomplish, so the form should <strong>adapt to their needs rather than expose the same workflow to everyone</strong>.</p></div></div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-10.webp" width="3000" height="1179" alt="Auction-creation archetypes" loading="lazy" decoding="async"></figure></div>
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-text"><p>The <strong>Historical Freight Rates</strong> step highlights why these archetypes matter. It was originally added as a client requirement to compare previous and new freight rates. However, once an organisation has completed its first auction for a lane, this step becomes largely redundant for subsequent users.</p></div></div>
+      <div class="cell cell--b"><div class="cs-text"><blockquote class="cs-quote"><strong>Our goal was to progressively reduce friction as users gained experience, while maintaining clarity at every step, ultimately making auction creation faster and more intuitive for experienced users.</strong></blockquote></div></div>
+    </div>
+    <div class="endcap"></div>
+  </div>
+</section>
+
+<!-- ===== Jobs to be done ===== -->
+<section class="band" aria-labelledby="h-jtbd">
+  <div class="band"><div class="col heading heading--sm"><h2 class="section-title reveal" id="h-jtbd">Jobs to be done by each Archetype</h2></div></div>
+  <div class="col">
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-11.webp" width="2274" height="1402" alt="Jobs to be done by each archetype" loading="lazy" decoding="async"></figure></div>
+    <div class="endcap"></div>
+  </div>
+</section>
+
+<!-- ===== Decisions ===== -->
+<section class="band" aria-labelledby="h-decisions">
+  <div class="band"><div class="col heading heading--sm"><h2 class="section-title reveal" id="h-decisions">✨ Now Let’s dive into all the decisions I took to improve overall experience</h2></div></div>
+  <div class="col">
+
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-sub cs-sub--sticky"><span class="cs-kicker">01</span><h3>Form no. of steps</h3></div></div>
+      <div class="cell cell--b"><div class="cs-text"><ul><li>Decrease the number of critical decisions per step by dividing critical decisions smaller step</li><li>Creating a Dynamic logic for Historical Data Step for each user archetype.</li></ul></div></div>
+    </div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-12.webp" width="3000" height="1605" alt="Redesigned form steps with dynamic historical data step" loading="lazy" decoding="async"></figure></div>
+
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-sub cs-sub--sticky"><span class="cs-kicker">02</span><h3>Updating the Transporter Selection Logic</h3></div></div>
+      <div class="cell cell--b"><div class="cs-text"><p>Transporter selection was a major point of friction. Users had to select transporters for each lane individually, while the existing lane, route, and vehicle matching logic was too rigid and did not reflect how procurement managers actually made their selections.</p></div></div>
+    </div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-13.webp" width="3000" height="1117" alt="Transporter selection with matching percentage" loading="lazy" decoding="async"></figure></div>
+    <div class="span reveal"><div class="cs-text"><p>We introduced a smarter selection process that assigns each transporter a matching percentage based on routes and vehicle requirements. This helped users quickly identify the best matches while still giving them the flexibility to invite transporters outside the recommended range.</p></div></div>
+
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-sub cs-sub--sticky"><span class="cs-kicker">03</span><h3>Making Every Field Easier to Understand</h3></div></div>
+      <div class="cell cell--b"><div class="cs-text"><p>Many users did not understand what certain fields meant or how their input would affect the auction.</p></div></div>
+    </div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-14.webp" width="3000" height="2180" alt="Fields redesigned with clearer labels and supporting explanations" loading="lazy" decoding="async"></figure></div>
+    <div class="span reveal"><div class="cs-text"><p>I redesigned fields with clearer labels and supporting explanations, supported by reusable content tokens for complex terms and configurations. The goal was simple: the form should educate users as they complete it.</p></div></div>
+
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-sub cs-sub--sticky"><span class="cs-kicker">04</span><h3>Adding more clarity into the auction duration and auction extension rules and explicitly telling user for how much time auction will run</h3></div></div>
+      <div class="cell cell--b"><div class="cs-text"><p>Originally, we had a somewhat complex logic for setting up the auction duration. Users first had to set the auction start time and then define how long the auction would run. This duration acted as the base duration, after which the auction extension rules would apply. However, the auction could not continue indefinitely, as there was also a limit on how long it could be extended.</p></div></div>
+    </div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-15.webp" width="3000" height="1048" alt="Auction duration and extension rules, view 1" loading="lazy" decoding="async"></figure></div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-16.webp" width="3000" height="1267" alt="Auction duration and extension rules, view 2" loading="lazy" decoding="async"></figure></div>
+
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-sub cs-sub--sticky"><span class="cs-kicker">05</span><h3>Redesigning the selecting lanes screen for better representation of a lane and bulk upload flows for faster lane selection</h3></div></div>
+      <div class="cell cell--b"><div class="cs-text"><p>Lanes are at the core of every freight auction. I redesigned the selection experience to make lane information easier to scan and manage, while improving the bulk upload flow to help users add large numbers of lanes faster.</p></div></div>
+    </div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-17.webp" width="3000" height="1904" alt="Redesigned lane selection screen and bulk upload flow" loading="lazy" decoding="async"></figure></div>
+
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-sub cs-sub--sticky"><span class="cs-kicker">06</span><h3>Hiding Complexity Until It Was Needed</h3></div></div>
+      <div class="cell cell--b"><div class="cs-text"><p>The auction flow included several advanced configurations, such as trip commitment, ranking, and bidding rules. Using progressive disclosure, I kept the default experience simple while making advanced settings available only when needed.</p></div></div>
+    </div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-18.webp" width="3000" height="540" alt="Progressive disclosure of advanced auction settings" loading="lazy" decoding="async"></figure></div>
+
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-sub cs-sub--sticky"><span class="cs-kicker">07</span><h3>Creating Continuity Between Publishing and Managing</h3></div></div>
+      <div class="cell cell--b"><div class="cs-text"><p>The original published screen felt disconnected from the actual bidding experience. I redesigned it to closely resemble how lanes would appear during bidding, creating a smoother transition between creating, publishing, and managing an auction.</p></div></div>
+    </div>
+    <div class="span"><figure class="cs-fig"><img src="assets/freight-case/fa-19.webp" width="3000" height="1009" alt="Redesigned published screen resembling the bidding experience" loading="lazy" decoding="async"></figure></div>
+    <div class="endcap"></div>
+  </div>
+</section>
+
+<!-- ===== Final Prototype ===== -->
+<section class="band" aria-labelledby="h-prototype">
+  <div class="band"><div class="col heading heading--sm"><h2 class="section-title reveal" id="h-prototype">Final Prototype</h2></div></div>
+  <div class="col">
+    <div class="span"><div class="cs-video"><iframe src="https://player.vimeo.com/video/1225693803?dnt=1" title="Auction Creation Prototype" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div>
+    <div class="endcap"></div>
+  </div>
+</section>
+
+<!-- ===== Success Metrics ===== -->
+<section class="band" aria-labelledby="h-metrics">
+  <div class="band"><div class="col heading heading--sm"><h2 class="section-title reveal" id="h-metrics">Success Metrics to Track for This Form</h2></div></div>
+  <div class="col">
+    <div class="span reveal"><div class="cs-text"><p class="lead">I am no longer associated with this project, but if I were continuing to work on it, these are the metrics I would track to measure the success of this redesign.</p></div></div>
+    <div class="span reveal"><div class="cs-metrics">
+      <div class="cs-text">
+        <span class="cs-kicker">Product &amp; Usability Metrics</span>
+        <ul class="cs-metric-list">
+          <li><span class="cs-metric-name">Form Abandonment Rate</span><span class="cs-metric-val cs-metric-val--muted">On lookout for numbers</span></li>
+          <li><span class="cs-metric-name">Average Auction Creation Time</span><span class="cs-metric-val">Reduced by 40%</span></li>
+          <li><span class="cs-metric-name">Form Error Rate</span><span class="cs-metric-val">Reduced dead and rage click in Microsoft Clarity</span></li>
+          <li><span class="cs-metric-name">Step-Level Drop-off Rate</span><span class="cs-metric-val cs-metric-val--muted">Lookout for number</span></li>
+          <li><span class="cs-metric-name">Independent Task Completion Rate</span><span class="cs-metric-val cs-metric-val--muted">On lookout for number</span></li>
+        </ul>
+      </div>
+      <div class="cs-text">
+        <span class="cs-kicker">Business &amp; Operational Metrics</span>
+        <ul class="cs-metric-list">
+          <li><span class="cs-metric-name">Support Calls/Tickets Volume</span><span class="cs-metric-val">70% less form related queries for new customers compared to first</span></li>
+          <li><span class="cs-metric-name">Support Effort Saved</span><span class="cs-metric-val">By a good margin</span></li>
+          <li><span class="cs-metric-name">Customer Adoption Rate</span></li>
+          <li><span class="cs-metric-name">Auction Completion Rate</span></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="endcap"></div>
+  </div>
+</section>
+
+<!-- ===== Future Scope ===== -->
+<section class="band" aria-labelledby="h-future">
+  <div class="band"><div class="col heading heading--sm"><h2 class="section-title reveal" id="h-future">Future Scope</h2></div></div>
+  <div class="col">
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-text">
+        <p class="lead">There is still potential to reduce auction creation time even further.</p>
+        <p>A few ideas I would explore next:</p>
+      </div></div>
+      <div class="cell cell--b"><div class="cs-text">
+        <ul>
+          <li><strong>Duplicate an Existing Auction:</strong> Create a new auction by copying an existing one, including lanes, transporters, and configurations.</li>
+          <li><strong>Auction Templates:</strong> Create reusable templates based on zones, regions, or frequently used procurement setups.</li>
+          <li><strong>Saved Configurations:</strong> Allow teams to reuse commonly used rules and configurations.</li>
+          <li><strong>AI-Assisted Auction Creation:</strong> Use AI to populate lanes, suggest transporters, and configure auctions based on historical data.</li>
+          <li><strong>Smart Defaults:</strong> Automatically prefill settings based on previous auctions and organisational patterns.</li>
+        </ul>
+        <p><strong>And many more.</strong></p>
+      </div></div>
+    </div>
+    <div class="endcap"></div>
+  </div>
+</section>
+
+<!-- ===== What I Learned ===== -->
+<section class="band" aria-labelledby="h-learned">
+  <div class="band"><div class="col heading heading--sm"><h2 class="section-title reveal" id="h-learned">What I Learned</h2></div></div>
+  <div class="col">
+    <div class="row reveal">
+      <div class="cell cell--a"><div class="cs-text"><p class="lead">This project taught me that simplifying a complex experience does not always mean removing features; it means showing the right information at the right time, grouping decisions clearly, and helping users understand the impact of their actions.</p></div></div>
+      <div class="cell cell--b"><div class="cs-text">
+        <p>My biggest learnings were:</p>
+        <ul>
+          <li>Training cannot permanently solve a confusing product experience.</li>
+          <li>Different users need different levels of guidance.</li>
+          <li>Complexity can be managed without removing flexibility.</li>
+          <li>Reducing decision-making effort is more important than simply reducing the number of fields.</li>
+          <li>Users should clearly understand the outcome of their configuration before they publish it.</li>
+        </ul>
+      </div></div>
+    </div>
+    <div class="endcap"></div>
+  </div>
+</section>
+
+<!-- ===== Biggest Takeaway ===== -->
+<section class="band insight cs-takeaway" aria-labelledby="h-takeaway"><div class="col"><div class="insight-inner">
+  <h2 class="role__label" id="h-takeaway" style="margin-bottom:var(--s5)">The Biggest Takeaway</h2>
+  <p class="fill-text"><strong>A complex workflow can still feel simple when users are guided through the right decisions at the right time.</strong></p>
+</div></div></section>
+
+<!-- ===== Thanks ===== -->
+<section class="band cs-outro" aria-labelledby="h-thanks">
+  <div class="band"><div class="col heading heading--sm"><h2 class="section-title reveal" id="h-thanks">Thanks for Reading!</h2></div></div>
+  <div class="col">
+    <div class="span reveal"><div class="cs-text"><p class="lead">Thank you for making it this far. I hope this case study gave you a clear look into my thinking, decisions, and approach to solving this problem.</p><p>I’m always open to feedback, ideas, and conversations, so feel free to share your thoughts.</p><p><strong>Thanks for reading!</strong></p></div></div>
+    <div class="span"><div class="cs-outro-cta" style="padding-top:var(--pad)">
+      <a class="btn btn--sm" href="index.html#work">Back to Selected Work <span class="arr"><svg class="ph" aria-hidden="true"><use href="#ph-arrow-right"/></svg></span></a>
+      <a class="btn btn--sm" href="index.html#contact">Contact <span class="arr"><svg class="ph" aria-hidden="true"><use href="#ph-arrow-right"/></svg></span></a>
+      <a class="btn btn--sm" href="https://medium.com/@riteshbumbak318/create-freight-auctions-40-faster-on-taabi-procurement-18ec61734e2f" target="_blank" rel="noopener noreferrer">Read on Medium <span class="arr"><svg class="ph" aria-hidden="true"><use href="#ph-arrow-right"/></svg></span></a>
+    </div></div>
+    <div class="endcap"></div>
+  </div>
+</section>
+</article>
+</main>
+
+<footer class="footer">
+  <div class="band"><div class="col footer-gap"></div></div>
+  <div class="col">
+    <div class="row">
+      <div class="cell cell--a footer-brand"><div class="footer-name">Ritesh Bumbak</div><small>Product Designer &middot; Enterprise systems &middot; Mumbai</small></div>
+      <nav class="cell cell--b footer-links" aria-label="Footer"><a href="index.html#work">Work</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a><button class="back-top" id="backToTop" type="button" aria-label="Back to top"><svg class="ph" aria-hidden="true"><use href="#ph-arrow-up"/></svg></button></nav>
+    </div>
+    <div class="colophon"><span>Find me here if you&rsquo;re building something cool &mdash; <a href="mailto:ritesh.cbcs@gmail.com">ritesh.cbcs@gmail.com</a></span><span>&copy; 2026 Ritesh Bumbak</span></div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/case-study.js"></script>
+</body></html>
